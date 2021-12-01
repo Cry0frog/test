@@ -1,0 +1,42 @@
+<div style="display: table; width: 100%; height: 94.7%;">
+  <div class="back-image"
+    style="display: table-cell; width: 30%; background-color: #402020; align-items: center; vertical-align: middle; ">
+  </div>
+  <div style="display: table-cell; width: 70%; padding-top: 15%;">
+    <div style="display: table; width: 90%; height: 100%; margin-left: 10%;">
+      <div style="display: table-header-group;">
+        <h1>Войти --------------- Регистрация</h1>
+      </div>
+      <div style="display: table-row; height: 2vw;">
+        <div style="display: table;">
+          <div style="display: table-cell;">
+            <h3>Логин</h3>
+          </div>
+          <div style="display: table-cell; width: 60%;">
+            <mat-form-field style="width: 240px;" appearance="outline" color="accent">
+              <input style="font-size: 18px;" matInput>
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+      <div style="display: table-row; height: 2vw;">
+        <div style="display: table;">
+          <div style="display: table-cell;">
+            <h3>Пароль</h3>
+          </div>
+          <div style="display: table-cell; width: 60%;">
+            <mat-form-field style="width: 240px;" appearance="outline" color="accent">
+              <input style="font-size: 18px;" matInput [type]="hidePassword ? 'password' : 'text'">
+              <button mat-icon-button matSuffix (click)="hidePassword = !hidePassword" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hidePassword">
+                <mat-icon>{{hidePassword ? 'visibility_off' : 'visibility'}}</mat-icon>
+              </button>
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+      <div style="display: table-row; ">
+        <button mat-flat-button style="background-color: green; color: white; ">Войти</button>
+      </div>
+    </div>
+  </div>
+</div>

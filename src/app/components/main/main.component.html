@@ -1,0 +1,40 @@
+<div class="padding">
+  <div class="search-bar">
+    <div>
+    <mat-form-field class="example-form-field" appearance="outline" floatLabel="never" color="accent">
+      <mat-icon  matPrefix>search</mat-icon>
+      <input matInput type="text" [(ngModel)]="value">
+      <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+    <button mat-flat-button style="background-color: green; bottom: 2px; color: white;">Поиск</button>
+  </div>
+  </div>
+  <div style="margin-top: 30px;">
+    <mat-tab-group animationDuration="0ms">
+      <mat-tab label="Популярные">
+        <mat-grid-list cols="4" rowHeight="100px">
+          <mat-grid-tile
+              *ngFor="let tile of tiles"
+              [colspan]="tile.cols"
+              [rowspan]="tile.rows"
+              [style.background]="tile.color">
+            <div>
+              <div style="margin-top: 20px; margin-left: 20px;">
+                {{tile.text}}
+              </div>
+            </div>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </mat-tab>
+      <mat-tab label="Second">
+
+      </mat-tab>
+      <mat-tab label="Third">
+
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+</div>
+<footer></footer>
