@@ -20,10 +20,26 @@
               [colspan]="tile.cols"
               [rowspan]="tile.rows"
               [style.background]="tile.color">
-            <div>
-              <div style="margin-top: 20px; margin-left: 20px;">
-                {{tile.text}}
-              </div>
+            <div *ngIf="tile.color != 'white'">
+                <div style="display: flex; align-items: initial; margin-left: 10px; margin-top: 10px;">
+                  <div style="display: table-cell; padding-bottom: 100px; height: 100%;">
+                    <div style="display: table-row;">
+                      {{tile.cource.text}}
+                    </div>
+                    <div style="display: table-row;">
+                      {{tile.cource.auhtor}}
+                    </div>
+                    <div style="display: table-row;">
+                      {{tile.cource.price}}
+                    </div>
+                  </div>
+                  <div style="display: table-cell;">
+                    <div style="display: block;" [style.margin-left]="tile.cource.margin_top" >
+                      <img  src="assets/back-for-login.png" style="height: 130px;"/>
+                    </div>
+                  </div>
+
+                </div>
             </div>
           </mat-grid-tile>
         </mat-grid-list>

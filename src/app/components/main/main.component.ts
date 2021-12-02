@@ -11,19 +11,79 @@ export class MainComponent implements OnInit {
   public value = 'Clear me';
 
   tiles: Tile[] = [
-    {text: 'cource', cols: 1, rows: 2, color: 'lightblue', margin_top: ''},
-    {text: 'cource', cols: 2, rows: 2, color: 'lightgreen', margin_top: ''},
-    {text: 'cource', cols: 1, rows: 1, color: 'lightpink', margin_top: ''},
-    {text: 'cource', cols: 1, rows: 2, color: '#DDBDF1', margin_top: ''},
-    {text: 'cource', cols: 1, rows: 2, color: '#DDBDF1', margin_top: ''},
-    {text: 'cource', cols: 1, rows: 2, color: 'lightpink', margin_top: ''},
-    {text: 'cource', cols: 1, rows: 2, color: 'lightblue', margin_top: ''},
-    {text: 'cource', cols: 1, rows: 1, color: 'lightgreen', margin_top: ''},
-    {text: '', cols: 4, rows: 1, color: 'white', margin_top: '10'},
+    {cols: 1, rows: 2, color: 'lightblue', cource: {
+      text: 'cource',
+      price: '100', 
+      auhtor: 'Peter',
+      margin_top: '120px',
+    }},
+    {cols: 2, rows: 2, color: 'lightgreen', cource: {
+      text: 'cource',
+      price: '200', 
+      auhtor: 'Ivan',
+      margin_top: '500px',
+    }},
+    {cols: 1, rows: 1, color: 'lightpink', cource: {
+      text: 'cource',
+      price: '100', 
+      auhtor: 'Kot' ,
+      margin_top: '120px',
+    }},
+    {cols: 1, rows: 2, color: '#DDBDF1',cource: {
+      text: 'cource',
+      price: '100', 
+      auhtor: 'Cat' ,
+      margin_top: '120px',
+    }},
+    {cols: 1, rows: 2, color: '#DDBDF1', cource: {
+      text: 'cource',
+      price: '100', 
+      auhtor: 'Dog' ,
+      margin_top: '120px',
+    }},
+    {cols: 1, rows: 2, color: 'lightpink',cource: {
+      text: 'cource',
+      price: '10000', 
+      auhtor: 'Red' ,
+      margin_top: '120px',
+    }},
+    {cols: 1, rows: 2, color: 'lightblue', cource: {
+      text: 'cource',
+      price: '10000', 
+      auhtor: 'Purpule' ,
+      margin_top: '120px',
+    }},
+    {cols: 1, rows: 1, color: 'lightgreen',cource: {
+      text: 'cource',
+      price: '2324', 
+      auhtor: 'Sans' ,
+      margin_top: '120px',
+    }},
+    {cols: 4, rows: 1, color: 'white',cource: {
+      text: 'cource',
+      price: '2343', 
+      auhtor: 'Narcis' ,
+      margin_top: '120px',
+    }},
 
-    {text: 'Eight', cols: 1, rows: 1, color: 'lightgreen', margin_top: ''},
-    {text: 'Eight', cols: 2, rows: 1, color: 'lightgreen', margin_top: ''},
-      {text: 'Seven', cols: 1, rows: 1, color: 'lightblue', margin_top: ''},
+    { cols: 1, rows: 1, color: 'lightgreen',cource: {
+      text: 'Eight',
+      price: '123', 
+      auhtor: 'NHoursearcis' ,
+      margin_top: '120px',
+    }},
+    {cols: 2, rows: 1, color: 'lightgreen', cource: {
+      text: 'Eight',
+      price: '345', 
+      auhtor: 'Bird' ,
+      margin_top: '500px',
+    }},
+    {cols: 1, rows: 1, color: 'lightblue',cource: {
+      text: 'Eight',
+      price: '678', 
+      auhtor: 'Mussnucle' ,
+      margin_top: '120px',
+    }},
   ];
 
   constructor() { }
